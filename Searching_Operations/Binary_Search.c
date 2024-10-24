@@ -27,7 +27,7 @@ int binary_search(int key_val){
      while(lb<=ub){
         mid = (lb+ub)/2;
         if(arr[mid]==key_val){
-            return mid; //returning index value of key value
+            return mid; //returning index of key value
         }else if(key_val>arr[mid]){
             lb = mid+1;
         }else{
