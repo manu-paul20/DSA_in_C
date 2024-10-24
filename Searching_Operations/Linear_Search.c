@@ -1,3 +1,6 @@
+//linear search in a array by taking user input
+
+
 #include<stdio.h>
 #define SIZE 5
 int arr[SIZE],loc=-1;
@@ -29,5 +32,5 @@ int linear_search(int key_val){
             return loc;  // returning key value index
         }
     }
-    return loc;
+    return loc;  //returning old loc if searching failed
 }
