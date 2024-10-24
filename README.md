@@ -9,8 +9,6 @@
        
    <li><strong>Linked Lists</strong><br>A linear data structure where elements are stored in nodes, each pointing to the next node.</li>
         <li><strong>Stacks and Queues</strong><br>Basic data structures with LIFO (Last In First Out) and FIFO (First In First Out) principles.</li>
-        <li><strong>Trees and Graphs</strong><br>Non-linear data structures used for hierarchical data representation and networked data models.</li>
-        <li><strong>Dynamic Programming</strong><br>An optimization technique for solving complex problems by breaking them down into simpler subproblems.</li>
     </ul>
     
    <h2>Usage</h2>
