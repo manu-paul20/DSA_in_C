@@ -41,48 +41,5 @@ int main()
 }
 void traverse()
 {
-  int data;
-  printf("Enter after which node you want to start traversing : ");
-  scanf("%d", &data);
-  struct node *ptr = head;
-  // started finding the specified node
-  while (ptr->next != head)
-  {
-    if (ptr->data == data)
-    {
-      break; // If any node's data matches with the specified data then the loop will break
-    }
-    else
-    {
-      ptr = ptr->next; // Else it will automatically broke in last node
-    }
-  }
-  // searching end
-
-  // searching results
-  if (ptr->next == head && ptr->data != data)
-  {
-    printf("Specified node not found\n");
-  }
-  else
-  {
-    if (ptr->next == head)
-    {
-      printf("There is no node after the specified node\n");
-    }
-    else
-    {
-      // This section will print all data after specified node , not from the specified node
-      ptr = ptr->next;
-      while (ptr->next != head)
-      {
-        printf("%d\n", ptr->data);
-        ptr = ptr->next;
-      }
-      if (ptr->next == head)
-      {
-        printf("%d\n", ptr->data);
-      }
-    }
-  }
+  //This section code is deleted due to some issue's
 }

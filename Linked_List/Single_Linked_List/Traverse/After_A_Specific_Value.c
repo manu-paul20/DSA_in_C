@@ -41,26 +41,5 @@ int main()
 
 void traverse()
 {
-  int data;
-  printf("Enter after which data you want to traverse : ");
-  scanf("%d",&data);
-  struct node *ptr = head;
-  while(ptr->data!=data){
-    ptr=ptr->next;
-  }
-  if(ptr->next==NULL){
-    printf("There is no node after the specified node\n");
-  }else{
-    ptr=ptr->next;
-  while (ptr->next != NULL)
-  {
-    printf("%d\n", ptr->data);
-
-    ptr = ptr->next;
-  }
-  if (ptr->next == NULL)
-  {
-    printf("%d\n", ptr->data);
-  }
-  }
+  //This section code is deleted due to some issue's
 }
