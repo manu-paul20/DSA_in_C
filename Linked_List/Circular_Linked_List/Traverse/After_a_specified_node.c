@@ -1,4 +1,5 @@
 // Hey , if you found this code helpful , then follow me on github
+// Dont be shocked after seeing the length of the program , its just formatted
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -41,5 +42,47 @@ int main()
 }
 void traverse()
 {
-  //This section code is deleted due to some issue's
+  int searchData;
+  printf("Enter the data of the no node after which you want to add a node : ");
+  scanf("%d", &searchData);
+  struct node *ptr = head;
+  // Searching for specified node
+  while (ptr->next != head)
+  {
+    if (ptr->data == searchData)
+    {
+      break;
+    }
+    else
+    {
+      ptr = ptr->next;
+    }
+  }
+  // searching node
+  if (ptr->data != searchData)
+  {
+    printf("Node not found\n");
+  }
+  else
+  {
+    if (ptr->next == head)
+    {
+      printf("There is no node after the specified node\n");
+    }
+    else
+    {
+      ptr = ptr->next; // This line will just forward the specified node location by 1 step
+                       // Because i have to print data after the specified node , not from the specified node
+      while (ptr->next != head)
+      {
+        printf("%d\n", ptr->data);
+        ptr = ptr->next;
+      }
+      if (ptr->next == head)
+      {
+        printf("%d\n", ptr->data); // This will print the data of the last node
+                                   // Because the loop will broke without printing it 😭
+      }
+    }
+  }
 }
