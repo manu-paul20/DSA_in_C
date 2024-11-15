@@ -41,5 +41,44 @@ int main()
 
 void traverse()
 {
-  //This section code is deleted due to some issue's
+  int searchData;
+  printf("Enter the data of the no node after which you want to add a node : ");
+  scanf("%d", &searchData);
+  struct node *ptr = head;
+  while (ptr->next != NULL)
+  {
+    if (ptr->data == searchData)
+    {
+      break;
+    }
+    else
+    {
+      ptr = ptr->next;
+    }
+  }
+  if (ptr->data != searchData)
+  {
+    printf("Node not found\n");
+  }
+  else
+  {
+    if (ptr->next == NULL)
+    {
+      printf("There is no node after the specified node\n");
+    }
+    else
+    {
+      ptr = ptr->next; // This line will just forward the specified node location by 1 step
+                       // Because i have to print data after the specified node , not from the specified node
+      while (ptr->next != NULL)
+      {
+        printf("%d\n", ptr->data);
+        ptr = ptr->next;
+      }
+      if (ptr->next == NULL)
+      {
+        printf("%d\n", ptr->data);
+      }
+    }
+  }
 }
